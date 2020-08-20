@@ -18,6 +18,29 @@ def binary_search(arr, target, start, end):
             return binary_search(arr, target, mid + 1, end)
             #start = mid + 1
 
+
+#def binary_search_recursive(arr, target, low, high):
+#
+#    middle = (low+high)/2
+#
+#    if len(arr) == 0:
+#        return -1 # array empty
+#
+#    elif low > high:
+#        return -1 # not found
+#
+#    elif arr[middle] == target:
+#        return middle
+#
+#    else:
+#        if target < arr[middle]:
+#            high = middle-1 # eliminate RHS
+#            
+#        else:      
+#            low = middle+1 # eliminate LHS
+#        return binary_search_recursive(arr, target, low, high)
+
+
 # STRETCH: implement an order-agnostic binary search
 # This version of binary search should correctly find 
 # the target regardless of whether the input array is
